@@ -69,3 +69,5 @@ end
 gem "shakapacker", "~> 8.0"
 
 gem "rspec-rails", "~> 7.0"
+
+gem "byebug", "~> 11.1"
