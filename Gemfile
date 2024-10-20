@@ -67,3 +67,5 @@ group :test do
 end
 
 gem "shakapacker", "~> 8.0"
+
+gem "rspec-rails", "~> 7.0"
