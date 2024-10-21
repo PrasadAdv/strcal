@@ -1,4 +1,5 @@
 module StringCalHelper
+  # extracts digits from given input string
   def extract_digits(string)
     digits = string.scan(/-?\d+/).map(&:to_i)
     digits.each_with_object({ positive_digits: [], negative_digits: [] }) do |d, res|
