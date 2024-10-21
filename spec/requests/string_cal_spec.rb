@@ -30,7 +30,7 @@ RSpec.describe 'StringCals', type: :request do
       it 'returns error response if string is not valid' do
         post '/add', params: { string_cal: { input_string: '1,2,-3' } }
         expect(response).to have_http_status(:unprocessable_entity)
-        expect(JSON.parse(response.body)).to eq({ 'error' => 'negative numbers are not allowed [-3]' })
+        expect(JSON.parse(response.body)).to eq({ 'error' => 'Negative numbers are not allowed [-3]' })
       end
     end
   end
