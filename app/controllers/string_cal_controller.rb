@@ -12,7 +12,7 @@ class StringCalController < ApplicationController
       sum =  @digits[:positive_digits].sum
       render json: { response: sum }, status: :ok
     else
-      render json: { error: "negative numbers are not allowed #{@digits[:negative_digits]}" }, status: :unprocessable_entity
+      render json: { error: "Negative numbers are not allowed #{@digits[:negative_digits]}" }, status: :unprocessable_entity
     end
   end
 
